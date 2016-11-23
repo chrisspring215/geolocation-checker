@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<h1>Find Locations</h1>
+
+<label>Enter the LAT of where you want to test
+	<input type="text" id="restaurantLat">
+</label>
+<br>
+<label>Enter the LON of where you want to test
+	<input type="text" id="restaurantLon">
+</label>
+<br>
+
+<p>Click the button to see if you are within the range.</p>
+<p>If you are within range, the CheckIn button will activate.</p>
+<p>The first two numbers displayed are your actual Lat and Long so you can plug those in to get an acuracy test.</p>
+
+<button onclick="getLocation()">Try It</button>
+<br>
+<button id="checkInButton" disabled>CLICK TO CHECK IN</button>
+
+<p id="demo"></p>
+
+
+</html>
